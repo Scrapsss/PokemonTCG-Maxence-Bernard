@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokemon TCG</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Le header nous servira de bannière tout au long de la page -->
+        <header>
+            <img src="ressources/tcg-logo.png" alt="Logo Pokemon TCG" id="Pokemon_Logo">
+            <div>
+                <h2>Collection</h2>
+                <h2><a href="Connexion/connexion.html">Connexion</a></h2>
+                <h2 id="DarkMode_Logo">Dark Mode</h2>
+            </div>
+        </header>
+
+        <!-- Toutes les denière actualités seront présentés ici -->
+        <div id="Actualite">
+            <img src="ressources/pikachu-surging-large-up.jpg" alt="Pikachu-Ex">
+            <img src="ressources/alolan-exeggutor-surging-large-up.jpg" alt="">
+            <img src="ressources/archaludon-surging-large-up.jpg" alt="">
+        </div>
+
+        <!-- On entre dans la partie la plus intéressante du site, nos cartes -->
+        <div id="TCG_Onglet">
+            <ul id="Onglets">
+                <!-- onglet Collection -->
+                <li class="tab tab-Collection tab-active"><h2 id="Button_Collection">Collection</h2></li>
+
+                <!-- Oui la pokéball est un onglet :D -->
+                <li class="tab tab-Ouverture">
+                    <div id="Pokeball">
+                        <img src="ressources/PokeBall_Up.png" alt="PokeBall_Image">
+                        <img src="ressources/PokeBall_Down.png" alt="">
+                    </div>
+                </li>
+
+                <!-- Onglet Echange -->
+                <li class="tab tab-Echange"><h2 id="Button_Echange">Échange</h2></li>
+
+            </ul>    
+        </div>
+
+        <!-- Cette section s'affichera quand l'utilisateur ouvrira l'onglet de collection -->
+        <section id="Collection" class="content Collection active">
+            <div id="Filtre">
+                Filtre
+            </div>
+            <div id="TCG_Hub">
+                Cartes
+            </div>
+        </section>
+
+        <!-- Section Ouverture -->
+        <section id="Ouverture" class="content Ouverture">
+            <p>Ouverture</p>
+
+        </section>
+
+        <!-- Et celle ci quand il ouvrira l'onglet d'échange -->
+         <section id="Echange" class="content Echange">
+            Section Echange
+         </section>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>

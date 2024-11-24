@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokemon TCG</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="connexion.css">
+    </head>
+    <body>
+
+        <header>
+            <a href="../index.html">
+                <img src="../ressources/tcg-logo.png" alt="Logo Pokemon TCG" id="Pokemon_Logo">
+            </a>
+            <div>
+                <h2>Collection</h2>
+                <h2><a href="">Connexion</a></h2>
+                <h2 id="DarkMode_Logo">Dark Mode</h2>
+            </div>
+        </header>
+
+        <section id="formulaire">
+            <div class="message-error">
+                <ul id="list-error"></ul>
+            </div>
+            <div class="message-success">
+                Formulaire envoyé
+            </div>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div>
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" name="pseudo" id="pseudo">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <div>
+                    <label for="password2">Entrez à nouveau le mot de passe</label>
+                    <input type="password" name="password2" id="password2">
+                </div>
+
+                <div>
+                    <label for="Remember-me">Se souvenir de moi</label>
+                    <input type="checkbox" name="remember" id="remember">
+                </div>
+
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+        
+        <script src="connexion.js"></script>
+    </body>
+</html>
